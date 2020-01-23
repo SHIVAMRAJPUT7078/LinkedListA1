@@ -7,6 +7,14 @@ public class MyLinkedList<E> implements LinkedListADT<E> {
         private E data;
         private Node<E> next;
 
+        private E getData() {
+            return data;
+        }
+
+        private Node<E> getNext() {
+            return next;
+        }
+
         public Node(E data, Node<E> next) {
             this.data = data;
             this.next = next;
